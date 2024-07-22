@@ -3,13 +3,10 @@ def single_root_words(root_word, *other_words) -> list:
 
     same_words = []
     root_word = root_word.lower()
-    other_words = list(other_words)
-    same_words = [w.lower() for w in other_words]
-
-    for w in other_words:
-        if root_word not in w:
-            same_words == same_words.extend(w)
-
+    other_words = [w.lower() for w in other_words]
+    for word in other_words:
+        if root_word in word or word in root_word:
+            same_words.append(word)
 
     return same_words
 
