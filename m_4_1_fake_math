@@ -1,0 +1,12 @@
+def divide(first: float, second: float) -> float:
+    """ф-я, возвращающая рез-т деления первого на второе"""
+    if second != 0:
+        return first / second
+    else:
+        print("Error")
+
+
+# print(divide(3.7, 0))
+
+if __name__ == "__main__":
+    divide(3.7, 0)
