@@ -1,0 +1,11 @@
+from math import inf
+def divide(first: float, second: float) -> float:
+    """ф-я, возвращающая рез-т деления первого на второе"""
+
+    if second != 0:
+        return first / second
+    else:
+        return inf
+
+if __name__ == "__main__":
+    print(divide(5, 3))
